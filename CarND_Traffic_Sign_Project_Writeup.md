@@ -67,7 +67,7 @@ all the them give me pretty much the same percentage, not much result.   Around 
 
 #### 2. Architecture of model.
 
-I did not change any thing on the LeNet-5 solution except for changing the color depth to 3 and output label to 43.    
+I did not change any thing on the LeNet-5 solution except for changing the color depth to 3 and output label to 43.   Tried a dropout layer before but not really working.   Removed from the code.
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
@@ -81,7 +81,6 @@ I did not change any thing on the LeNet-5 solution except for changing the color
 | Flatten				| Output 400									|
 | Fully connected		| Output 120									|
 | Activitation          | Relu, output 120                              |
-| Dropout               | keep_prob=0.5, output 120                     |
 | Fully connected       | Output 84                                     |
 | Activitation          | Relu, output 84                               |
 | Fully connected       | Output 43 (label)                             |
